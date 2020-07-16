@@ -9,6 +9,11 @@ $(function(){
             const test = $(this).prev('.edit_cont');
             console.log(test);
             localStorage.setItem("plannerInput", inputValue)
+            
+             var timeSlotId = $('9am');
+            localStorage.setItem(timeSlotId, inputValue);
+            $("9am").val(localStorage.getItem('9am'))
+            
          }
           else{
             $(this).text('save');
